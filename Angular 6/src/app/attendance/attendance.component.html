@@ -1,0 +1,59 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/">Home</a>
+  <a href="AttendanceComponent">Attendance</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#" (click)="onLogout()">Logout</a>
+  
+</div>
+<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+<!-- <div class="contener">
+  <div class="row">
+    <div class="main">
+      <h1 align="center">Attendance System</h1>
+      <form action="">
+        <input type="text" id="date" placeholder="Enter Date"><br>
+        <input type="text" id="starting" placeholder="Enter Starting Time"><br>
+        <input type="text" id="chaking" placeholder="Enter Chaking Time"><br>
+        <input type="submit" value="Submit" id="button" style="
+        background-color: black; margin-left: 0%;"> 
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+<table *ngIf="attendancedet" class="table-fill" >
+  <thead>
+      <tr>
+          <th colspan="2" class="text-center">User Profile</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>First Name</td>
+          <td>{{attendancedet}}</td>
+      </tr>
+      <!-- <tr>
+          <td>Last Name</td>
+          <td>{{userDetails.fullName.split(' ')[1]}}</td>
+      </tr>
+      
+      <tr>
+          <td>Email</td>
+          <td>{{userDetails.email}}</td>
+      </tr>
+      <tr>
+            <td>Position</td>
+            <td>{{userDetails.position}}
+                   
+            </td>
+        </tr> -->
+      <!-- <tr>
+          <td colspan="2" class="text-center">
+              <input type="button" (click)="onLogout()" value="Logout" />
+          </td>
+      </tr> -->
+  </tbody>
+</table>
